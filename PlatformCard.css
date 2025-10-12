@@ -1,0 +1,146 @@
+/* Base Card Styling */
+.platform-card {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transform: translateY(0);
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover Effects */
+  .platform-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Logo Container Animation */
+  .logo-container {
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .platform-card:hover .logo-container {
+    background-color: #f8f9fa;
+  }
+  
+  .logo-image {
+    transition: transform 0.3s ease;
+  }
+  
+  .platform-card:hover .logo-image {
+    transform: scale(1.1);
+  }
+  
+  /* Metric Cards Animation */
+  .metric-card {
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+  }
+  
+  .platform-card:hover .metric-card {
+    background-color: #f1f5f9;
+    border-color: #e2e8f0;
+  }
+  
+  /* Star Rating Animation */
+  .star-icon {
+    transition: transform 0.3s ease;
+  }
+  
+  .platform-card:hover .star-icon {
+    transform: rotate(10deg) scale(1.2);
+  }
+  
+  /* Badge Animation */
+  .badge {
+    transition: all 0.3s ease;
+  }
+  
+  .platform-card:hover .badge {
+    transform: scale(1.05);
+  }
+  
+  /* Button Transitions */
+  .details-button, .visit-button {
+    transition: all 0.2s ease;
+  }
+  
+  .details-button:hover, .visit-button:hover {
+    transform: translateY(-1px);
+  }
+  
+  .visit-button:active {
+    transform: translateY(1px);
+  }
+  
+  /* Selected State Animations */
+  .platform-card.selected {
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+  }
+  
+  /* Highlighted Card Animation */
+  .platform-card.highlighted {
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.4);
+    }
+    70% {
+      box-shadow: 0 0 0 6px rgba(74, 222, 128, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(74, 222, 128, 0);
+    }
+  }
+  
+  /* Details Section Animation */
+  .details-section {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Analysis List Animation */
+  .analysis-item {
+    opacity: 0;
+    transform: translateX(-10px);
+    animation: slideIn 0.3s ease-in-out forwards;
+  }
+  
+  .analysis-item:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  
+  .analysis-item:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .analysis-item:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  
+  @keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Check Mark Animation */
+  .check-mark {
+    transition: all 0.3s ease;
+  }
+  
+  .platform-card:hover .check-mark {
+    transform: scale(1.1);
+    background-color: #dbeafe;
+  }

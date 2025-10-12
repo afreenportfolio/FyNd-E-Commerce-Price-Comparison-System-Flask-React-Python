@@ -1,0 +1,150 @@
+/* Main container animation */
+.specs-container {
+    transition: all 0.3s ease;
+    transform: translateY(0);
+  }
+  
+  .specs-container:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Title animation */
+  .specs-title {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .specs-title::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background-color: #3b82f6;
+    bottom: -4px;
+    left: 0;
+    transform: scaleX(0.7);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+  
+  .specs-container:hover .specs-title::after {
+    transform: scaleX(1);
+  }
+  
+  /* Category animations */
+  .spec-category {
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    opacity: 0;
+    animation: fadeInSlideUp 0.4s forwards;
+    transform: translateY(10px);
+  }
+  
+  /* Staggered animation for categories */
+  .category-0 { animation-delay: 0.1s; }
+  .category-1 { animation-delay: 0.2s; }
+  .category-2 { animation-delay: 0.3s; }
+  
+  @keyframes fadeInSlideUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Category header animations */
+  .category-header {
+    transition: all 0.2s ease;
+    border-left: 3px solid transparent;
+  }
+  
+  .category-header:hover {
+    border-left: 3px solid #3b82f6;
+    padding-left: 10px;
+  }
+  
+  .info-icon {
+    transition: transform 0.3s ease;
+  }
+  
+  .category-header:hover .info-icon {
+    transform: rotate(15deg);
+  }
+  
+  .chevron-icon {
+    transition: transform 0.3s ease;
+  }
+  
+  .category-header:hover .chevron-icon {
+    transform: scale(1.2);
+  }
+  
+  /* Specification items animations */
+  .spec-items {
+    max-height: 500px; /* Set to a value larger than your content would need */
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease;
+    opacity: 1;
+  }
+  
+  .spec-items.collapsed {
+    max-height: 0;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  /* Spec row animations */
+  .spec-row {
+    transition: all 0.2s ease;
+    transform: translateX(0);
+    opacity: 0;
+    animation: fadeInRow 0.3s forwards;
+  }
+  
+  @keyframes fadeInRow {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Staggered animation for items */
+  .item-0 { animation-delay: 0.05s; }
+  .item-1 { animation-delay: 0.1s; }
+  .item-2 { animation-delay: 0.15s; }
+  
+  .spec-row:hover {
+    background-color: #eff6ff !important; /* Light blue hover state */
+    transform: translateX(2px);
+  }
+  
+  .spec-name {
+    transition: all 0.2s ease;
+  }
+  
+  .spec-row:hover .spec-name {
+    color: #4b5563; /* Darker text on hover */
+  }
+  
+  .spec-value {
+    transition: all 0.2s ease;
+  }
+  
+  .spec-row:hover .spec-value {
+    color: #1f2937; /* Darker text on hover */
+  }
+  
+  /* Expandable section animation */
+  @keyframes expandSection {
+    from {
+      max-height: 0;
+      opacity: 0;
+    }
+    to {
+      max-height: 500px;
+      opacity: 1;
+    }
+  }
+  
+  .spec-items.expanded {
+    animation: expandSection 0.3s ease-out forwards;
+  }
