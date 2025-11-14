@@ -1,0 +1,15 @@
+git clone https://github.com/afreenportfolio/FyNd-E-Commerce-Price-Comparison-System-Flask-React-Python.git
+cd fynd
+
+# Backend
+python -m venv venv
+source venv/bin/activate    # Linux/macOS
+# venv\Scripts\activate     # Windows
+pip install -r backend/requirements.txt
+cd backend
+flask run
+
+# Frontend (new terminal)
+cd frontend
+npm install
+npm run dev
