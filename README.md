@@ -8,18 +8,21 @@
 FyNd is a web-based platform designed to help users compare product prices in real-time from various online retailers. By integrating third-party APIs, it fetches up-to-date pricing data, allowing users to make informed purchasing decisions quickly. The application emphasizes modular architecture for scalability and reliability.
 
 ## Features
+
 1. Product retrieval from multiple e-commerce APIs (**Rainforest API for Amazon & Sandbox API for eBay**).
 2. User-friendly interface for searching and comparing products.
 3. Modular backend for easy maintenance and expansion.
 4. Structured test cases for debugging and system reliability.
 
 ## Technologies used
+
 1. Backend: Flask, Python
 2. Frontend: React
 3. Database: Integrated via APIs
 4. Tools: VS Code for development
 
 ## Installation
+
 1. Clone the repository: `git clone https://github.com/afreenportfolio/fynd-e-commerce-price-comparison-system.git`
 2. Install npm & React:
     - Ubuntu:
@@ -38,6 +41,7 @@ FyNd is a web-based platform designed to help users compare product prices in re
 8. Install dependencies: `pip install -r requirements.txt`
 
 ## File Directory
+ 
   ```  
     fynd/
     ├── backend/
@@ -98,6 +102,7 @@ FyNd is a web-based platform designed to help users compare product prices in re
 ```
  
 ## Usage
+
 1. Navigate to the project directory: `cd fynd`
 2. Create a virtual environment: `python -m venv venv`
 3. Activate the virtual environment:
@@ -118,4 +123,5 @@ FyNd is a web-based platform designed to help users compare product prices in re
 Contributions are welcome! Please fork the repo and submit a pull request.
 
 ## License
-- MIT License
+
+MIT License
