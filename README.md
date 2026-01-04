@@ -1,6 +1,7 @@
 # FyNd: Real-Time Price Comparison Platform
 
-![Type](https://img.shields.io/badge/Type-Academic_Project-purple) ![Status](https://img.shields.io/badge/Status-Completed_Milestone-grey)
+![Type](https://img.shields.io/badge/Type-Academic_Project-purple) 
+![Status](https://img.shields.io/badge/Status-Completed_Milestone-grey)
 
 >Due to API rate limits, we were not able to access real-time data (like prices, ratings, reviews) from Amazon & eBay.
 
@@ -19,7 +20,7 @@ FyNd is a web-based platform designed to help users compare product prices in re
 4. Tools: VS Code for development
 
 ## Installation
-1. Clone the repository: `git clone https://github.com/afreenportfolio/FyNd-E-Commerce-Price-Comparison-System-Flask-React-Python.git`
+1. Clone the repository: `git clone https://github.com/afreenportfolio/fynd-e-commerce-price-comparison-system.git`
 2. Install npm & React:
     - Ubuntu:
        - `sudo apt update`
