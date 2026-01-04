@@ -1,4 +1,7 @@
 # FyNd: Real-Time Price Comparison Platform
+
+![Type](https://img.shields.io/badge/Type-Academic_Project-purple) ![Status](https://img.shields.io/badge/Status-Completed_Milestone-grey)
+
 >Due to API rate limits, we were not able to access real-time data (like prices, ratings, reviews) from Amazon & eBay.
 
 FyNd is a web-based platform designed to help users compare product prices in real-time from various online retailers. By integrating third-party APIs, it fetches up-to-date pricing data, allowing users to make informed purchasing decisions quickly. The application emphasizes modular architecture for scalability and reliability.
@@ -106,14 +109,12 @@ FyNd is a web-based platform designed to help users compare product prices in re
 6. Open another terminal
 7. Navigate to the frontend directory: `cd frontend`
 8. Start the React app: `npm start`
-9. Access the app at **http://localhost:3000**
+9. Access the app at [FyNd](http://localhost:3000)
 10. Search for products and view comparisons.
 
-Contributing
-- Contributions are welcome! Please fork the repo and submit a pull request.
+## Contributing
 
-License
+Contributions are welcome! Please fork the repo and submit a pull request.
+
+## License
 - MIT License
-
-- ![Type](https://img.shields.io/badge/Type-Academic_Project-purple)
-- ![Status](https://img.shields.io/badge/Status-Completed_Milestone-grey)
