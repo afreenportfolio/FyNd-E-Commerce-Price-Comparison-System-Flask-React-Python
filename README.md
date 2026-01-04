@@ -114,3 +114,6 @@ Contributing
 
 License
 - MIT License
+
+- ![Type](https://img.shields.io/badge/Type-Academic_Project-purple)
+- ![Status](https://img.shields.io/badge/Status-Completed_Milestone-grey)
